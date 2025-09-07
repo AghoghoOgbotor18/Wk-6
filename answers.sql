@@ -1,3 +1,5 @@
+USE salesdb;
+
 -- Question 1: Get employee details with office information using INNER JOIN
 SELECT 
     e.firstName, 
@@ -31,3 +33,4 @@ FROM customers c
 RIGHT JOIN orders o ON c.customerNumber = o.customerNumber
 LIMIT 10;
 --Result: Shows the first 10 orders, including those that might not have valid customer records
+
